@@ -65,7 +65,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@902fa8ec7d6ecbf8d84d538b9b233a880e428804 # v5.7.0
         with:
-          images: bytevictor/movistarwebdavproxy
+          images: bytevictor/movistar-webdav-proxy
           tags: |
             type=raw,value=latest,enable=${{ github.ref == 'refs/heads/fork' }}
             type=sha,prefix=sha-
